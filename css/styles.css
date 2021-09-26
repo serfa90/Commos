@@ -6,20 +6,6 @@ html{
     max-width: 100%;
 }
 
-.carouselButton{
-    background-color: #009EE0;
-    font-family: Lato;
-    font-weight: 600;
-    font-size: 16px;
-    color: white;
-    width: 150px;
-    height: 46px;
-    border-radius: 50px;
-    border: none;
-    position: absolute;
-    margin: 35% 25% 25% 15%
-}
-
 /*||||||||||| NAVBAR |||||||||||*/
 nav{
     height: 104px;
@@ -69,24 +55,34 @@ nav ul ul{
     opacity: 0;
     visibility: hidden;
     transition: top .3s;
+    border-radius: 15px;
 }
 nav ul ul li{
     position: relative;
     margin: 0px;
-    width: 250px;
+    width: 330px;
     float: none;
     display: list-item;
+    background: white;
+    text-align: left;
 }
 nav ul ul li a{
     line-height: 30px;
+    font-size: 14px;
 }
 nav ul ul li a:hover{
     color: black;
 }
 nav ul ul ul li{
     position: relative;
-    top: 10px;
-    left: 150px;
+    top: -50px;
+    left: 220px;
+}
+nav ul ul li:hover{
+    background-color: #0088C9;
+}
+nav ul ul ul li:hover{
+    background-color: #0088C9;
 }
 nav .logo{
     float: left;
@@ -107,7 +103,15 @@ nav button{
     margin-left: 66px;
 
 }
-
+nav ul h6{
+    color: #172983;
+    text-align: center;
+    font-size: 16px;
+    background-color: white;
+}
+.navLi{
+    width: 158px;
+}
 /*||||||||| HOME STYLING ||||||||*/
 
 /*MEET CONTENT CONTAINER*/
@@ -116,45 +120,45 @@ nav button{
     background-color: #009EE0;
     display: flex;
 }
-.meetTitle{
-    color: #fff;
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 40px;
-    padding-top: 81px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 47px;
-    text-align: center;
-    position: relative;
-}
-.meetContent{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    font-size: 16px;
-    position: relative;
-    padding-left: 143px;
-    margin-right: 100px;
-}
-.blueSquare{
-    width: 350px;
-    height: 419px;
-    background-color: #172983;
-    border-radius: 20px 0 0 20px;
-    margin-left: 983px;
-    position: absolute;
-    top: 1054px;
-    overflow: hidden;
-}
-.whiteSquare{
-    width: 505px;
-    height: 419px;
-    background-color: white;
-    border-radius: 20px;
-    position: absolute;
-    margin-left: 813px;
-    margin-top: 235px;
-}
+    .meetTitle{
+      color: #fff;
+      font-family: Roboto;
+      font-weight: 700;
+        font-size: 40px;
+       padding-top: 81px;
+      font-style: normal;
+       font-weight: bold;
+       line-height: 47px;
+       text-align: center;
+      position: relative;
+    }
+    .meetContent{
+      font-family: Arial, Helvetica, sans-serif;
+     color: #fff;
+      font-size: 16px;
+      position: relative;
+       padding-left: 143px;
+       margin-right: 100px;
+    }
+    .blueSquare{
+     width: 365px;
+     height: 419px;
+     background-color: #172983;
+     border-radius: 20px 0 0 20px;
+     margin-left: 983px;
+     position: absolute;
+     top: 1054px;
+     overflow: hidden;
+    }
+    .whiteSquare{
+     width: 505px;
+     height: 419px;
+     background-color: white;
+     border-radius: 20px;
+     position: absolute;
+     margin-left: 813px;
+     margin-top: 235px;
+    }
 
 /*ABOUT HEDGE TUTOR CONTAINER*/
 .aboutContainer{
@@ -222,3 +226,43 @@ footer{
     border-radius: 30px;
     box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
 }
+.carouselButton{
+    background-color: #009EE0;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    width: 150px;
+    height: 46px;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    margin: 35% 25% 25% 15%
+}
+
+/*|||||||||||||||| HEDGETUTOR PAGE |||||||||||||||||*/
+
+.hedgeContainer{
+        height: 774px;
+        background-color: #172983;
+        display: flex;
+    }
+    .hedgeBlueSquare{
+        width: 366px;
+        height: 419px;
+        background-color: #009EE0;
+        border-radius: 20px 0 0 20px;
+        margin-left: 983px;
+        position: absolute;
+        top: 1054px;
+        overflow: hidden;
+    }
+    .hedgeWhiteSquare{
+        width: 505px;
+        height: 419px;
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        margin-left: 813px;
+        margin-top: 235px;
+    }
