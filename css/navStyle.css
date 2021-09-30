@@ -30,11 +30,18 @@ nav button{
     border: none;
     margin-right: 154px;
 }
+.navbar-brand{
+    margin-left: 4%;
+}
 #currentPage{
     font-weight: 600;
 }
 #navbarNavDropdown{
-    margin-left: 26%;
+    margin-left: 24%;
+}
+.dropdown-item{
+    font-family: helvetica;
+    font-size: 0.8rem;
 }
 .navTitle{
     font-family: helvetica;
@@ -43,9 +50,7 @@ nav button{
     color: #172983;
     margin-left: 4%;
 }
-.navbar-nav{
-    display: flex;
-}
+
 .dropdown-menu li {
     position: relative;
   }
