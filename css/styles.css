@@ -6,112 +6,6 @@ html{
     max-width: 100%;
 }
 
-/*||||||||||| NAVBAR |||||||||||*/
-nav{
-    height: 104px;
-    background: rgba(196, 196, 196, 0.26);
-    backdrop-filter: blur(4px);
-    position: fixed;
-    top: 0;
-}
-nav:after{
-    content: '';
-    clear: both;
-    display: table;
-}
-nav ul{
-    float: right;
-    list-style: none;
-    margin-right: 40px;
-    position: relative;
-    padding-top: 30px;
-}
-nav ul li{
-    display: inline-block;
-    background: rgba(196, 196, 196, 0);
-    margin: 0 5px;
-}
-nav ul li:hover > ul{
-    opacity: 1;
-    visibility: visible;
-    top: 35px;
-}
-nav ul li a{
-    color: #172983;
-    text-decoration: none;
-    line-height: 18px;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: helvetica, arial, sans-serif;
-    padding: 8px 15px;
-}
-nav ul li a:hover{
-    color: black;
-    font-weight: 500;
-}
-nav ul ul{
-    position: absolute;
-    top: 50px;
-    opacity: 0;
-    visibility: hidden;
-    transition: top .3s;
-    border-radius: 15px;
-}
-nav ul ul li{
-    position: relative;
-    margin: 0px;
-    width: 330px;
-    float: none;
-    display: list-item;
-    background: white;
-    text-align: left;
-}
-nav ul ul li a{
-    line-height: 30px;
-    font-size: 14px;
-}
-nav ul ul li a:hover{
-    color: black;
-}
-nav ul ul ul li{
-    position: relative;
-    top: -50px;
-    left: 220px;
-}
-nav ul ul li:hover{
-    background-color: #0088C9;
-}
-nav ul ul ul li:hover{
-    background-color: #0088C9;
-}
-nav .logo{
-    float: left;
-    padding-left: 54px;
-    padding-top: 30px;
-    height: 10px;
-}
-nav button{
-    background-color: #0088C9;
-    font-family: Lato;
-    font-weight: 400;
-    font-size: 16px;
-    color: white;
-    width: 150px;
-    height: 46px;
-    border-radius: 50px;
-    border: none;
-    margin-left: 66px;
-
-}
-nav ul h6{
-    color: #172983;
-    text-align: center;
-    font-size: 16px;
-    background-color: white;
-}
-.navLi{
-    width: 158px;
-}
 /*||||||||| HOME STYLING ||||||||*/
 
 /*MEET CONTENT CONTAINER*/
@@ -125,7 +19,8 @@ nav ul h6{
       font-family: Roboto;
       font-weight: 700;
         font-size: 40px;
-       padding-top: 81px;
+       padding-top: 5%;
+       margin-bottom: -3%;
       font-style: normal;
        font-weight: bold;
        line-height: 47px;
@@ -169,7 +64,8 @@ nav ul h6{
     font-family: Roboto;
     font-weight: 700;
     font-size: 40px;
-    padding: 73px 0 105px 500px;
+    text-align: center;
+    padding: 5% 0 5% 0;
 }
 .aboutVideoTitle{
     margin-bottom: 20px;
@@ -182,9 +78,10 @@ iframe{
     border-radius: 15px;
 }
 
-/*|||||||||| LEARN ABOUT CONTAINER ||||||||||||*/
+/*|||||||||| LEARN ABOUT US CONTAINER ||||||||||||*/
 .learnContainer{
     margin-bottom: 92px;
+    padding: 0 7% 0 7%;
 }
 .learnButton{
     width: 367px;
@@ -200,8 +97,8 @@ iframe{
     font-family: Roboto, sans-serif;
     font-size: 40px;
     color: #172983;
-    font-weight: bold;
-    padding: 20% 17% 0 17%;
+    font-weight: bolder;
+    padding: 20% 0 0 0;
     text-align: center;
 }
 .learnButton p{
@@ -209,7 +106,8 @@ iframe{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
+    padding: 0 8% 0 8%;
 }
 /*|||||||||| FOOTER ||||||||||*/
 
@@ -243,7 +141,7 @@ footer{
 /*|||||||||||||||| HEDGETUTOR PAGE |||||||||||||||||*/
 
 .hedgeContainer{
-        height: 774px;
+        height: 847px;
         background-color: #172983;
         display: flex;
     }
@@ -266,3 +164,16 @@ footer{
         margin-left: 813px;
         margin-top: 235px;
     }
+    .downloadButton{
+        width: 258px;
+        height: 70px;
+        position: absolute;
+        border: none;
+        border-radius: 40px;
+        color: #009EE0;
+        font-size: 16px;
+        background-color: white;
+        margin: 53% 10% 10% 10%;
+        font-weight: 600;
+    }
+    

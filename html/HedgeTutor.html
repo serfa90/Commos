@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="keywords" content="">
+   <meta name="description" content="Commos - Commodities Trading Made Simple">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Commos Ltd">
+   <link rel="icon" type="image/png" href="https://www.commosconsulting.com/images/favicon.png">
+   <!--Styling link pages-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <link rel="stylesheet" href="/css/styles.css">
+   <link rel="stylesheet" href="/css/navStyle.css">
+   <title>Commos - Commodities Trading Made Simple</title>
+ </head>
+ <body>
+  <!--======================NAVBAR=========================-->
+  <nav class="navbar navbar-expand-lg sticky-top bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><img src="../images/Commos.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="currentPage" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              HedgeTutor
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">About HedgeTutor</a></li>
+              <li><a class="dropdown-item" href="#">Download Brochure</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+             Subscriptions
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Hedge Tutor Subscriptions</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Subscriptions Prices and Trials</a>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="navTitle">Exchange specific Subscriptions</li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  London Metal Exchange (LME) Subscriptions &raquo;
+                </a>
+                <ul class="dropdown-menu dropdown-submenu">
+                  <li>
+                    <a class="dropdown-item" href="#">LME - Base Metals Market subscription</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">XCU - Copper Cathodes Market subscription</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Singapore Exchange (SGX) subscriptions &raquo;
+                </a>
+                <ul class="dropdown-menu dropdown-submenu">
+                  <li>
+                    <a class="dropdown-item" href="#">TSR - Natural Rubber Market subscription</a>
+                  </li>
+                </ul>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="navTitle">Corporate Subscriptions</li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    LDC - Louis Dreyfus Company &raquo;
+                  </a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="#">LDC - Agricultural Market subscription</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li class="navTitle">Subscriptions by Market</li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Generic Market &raquo;
+                  </a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="#">Generic Commodity Market subscription</a>
+                    </li>
+                  </ul>
+                </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Agriculturals &raquo;
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                      <li>
+                        <a class="dropdown-item" href="#">AGS - Agricultural Market subscription</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">TSR - Natural Rubber Market subscription</a>
+                      </li>
+                    </ul>
+                  </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Base Metals &raquo;
+                      </a>
+                      <ul class="dropdown-menu dropdown-submenu">
+                        <li>
+                          <a class="dropdown-item" href="#">LME - Base Metals Market subscription</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">XCU - Copper Cathodes Market subscription</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Bulks &raquo;
+                      </a>
+                      <ul class="dropdown-menu dropdown-submenu">
+                        <li>
+                          <a class="dropdown-item" href="#">XIO - Iron Ore Market subscription</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">COA - Coal Market subscription</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Energy &raquo;
+                      </a>
+                      <ul class="dropdown-menu dropdown-submenu">
+                        <li>
+                          <a class="dropdown-item" href="#">OIL - Crude Oil Market subscription</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Environmental &raquo;
+                      </a>
+                      <ul class="dropdown-menu dropdown-submenu">
+                        <li>
+                          <a class="dropdown-item" href="#">VCM - Voluntary Carbon Market subscription</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">CO2 - Emissions Market subscription</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Precious Metals &raquo;
+                      </a>
+                      <ul class="dropdown-menu dropdown-submenu">
+                        <li>
+                          <a class="dropdown-item" href="#">XCB - Central Banks & Investors Gold Market</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">XAU - Gold Physicals and Derivates Market</a>
+                        </li>
+                      </ul>
+                    </li>
+            </ul> 
+          <li class="nav-item">
+            <a class="nav-link" href="#">Client Service</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">The Team</a></li>
+              <li><a class="dropdown-item" href="#">Our Partners</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button>LOGIN</button>
+  </nav>
+    <header>
+        <!--================= CAROUSEL ==========================-->
+       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="images/Commos.png" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="..." class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="..." class="d-block w-100" alt="...">
+           </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"><img src="../images/Vector-right.png" alt=""></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"><img src="../images/Vector-right.png" alt=""></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
+    </header>
+
+    <!--=================== MEET COMMOS CONTAINER ================================-->
+    <div class="container-fluid hedgeContainer">
+      <div class="row">
+        <h2 class="meetTitle col-xl-12 d-flex justify-content-center"> HedgeTutor: Commodity educational platform</h2>
+        <p class="meetContent col-xxl-6 col-xl-6">HedgeTutor brings to our subscribers an extremely realistic and in-depth exposure to the commodity markets of their choice. The integrated learning experience is based on Simulations, which bring the opportunity to explore different self-defined trading scenarios; Tutorials, which provide a solid theoretical background that can be self-assessed with quizzes and Cases Studies, which apply the concepts being reviewed to specific market situations.</br></br>
+
+            The simulator allows subscribers to trade physical and financial commodity products having to deal with the very same parameters as in real-life only without financial and counterparty risks. The simulated market scenarios include random prices for physical commodities and their related financial contracts, including spot and forward price values, physical inventories and they span throughout a determined simulated period of time.
+            
+            For more information please contact us at info@commosconsulting.com.
+        </p>
+        <button class="downloadButton">Download Brochure</button>
+        <div class="hedgeBlueSquare"></div>
+        <div class="hedgeWhiteSquare"></div>
+     </div>
+    </div>
+
+    <!--================ ABOUT HEDGETUTOR VIDEOS CONTAINER ======================-->
+    <div class="container-fluid row justify-content-around aboutContainer">
+      <h2 class="subTitle col-xl-12 col-xxl-12">About Hedge Tutor</h2>
+      <div class="col-xl-8">
+         <iframe width="900" height="509" src="https://www.youtube.com/embed/03T7CcAxGtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      </div>
+
+        <!--=============== LEARN ABOUT US CONTAINER =================-->
+     <div class="container-fluid row justify-content-around learnContainer">
+       <h2 class="subTitle">Learn more about us:</h2>
+       <a class="learnButton" href="#">
+         <h5>Subscriptions</h5>
+         <p>The details about our offering for 
+           each specific market.</p>
+       </a>
+       <a class="learnButton" href="#">
+         <h5>Our Partners</h5>
+         <p>Who supports our innovative 
+           educational approach</p>
+       </a>
+     </div>
+    <footer>
+     
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>

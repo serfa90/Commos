@@ -1,0 +1,64 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+nav{
+    height: 104px;
+    background: rgba(196, 196, 196, 0.26);
+    backdrop-filter: blur(4px);
+    position: fixed;
+}
+.nav-link{
+    color: #172983;
+    text-decoration: none;
+    line-height: 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: helvetica, arial, sans-serif;
+    padding: 8px 15px;
+    justify-content: space-around;
+}
+nav button{
+    background-color: #0088C9;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    width: 130pt;
+    height: 34pt;
+    border-radius: 50px;
+    border: none;
+    margin-right: 154px;
+}
+#currentPage{
+    font-weight: 600;
+}
+#navbarNavDropdown{
+    margin-left: 26%;
+}
+.navTitle{
+    font-family: helvetica;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #172983;
+    margin-left: 4%;
+}
+.navbar-nav{
+    display: flex;
+}
+.dropdown-menu li {
+    position: relative;
+  }
+  .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+  }
+  .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+  }
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
