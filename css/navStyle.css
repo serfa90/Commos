@@ -8,7 +8,7 @@ nav{
     backdrop-filter: blur(4px);
     position: fixed;
 }
-.nav-link{
+.principalNav{
     color: #172983;
     text-decoration: none;
     line-height: 18px;
@@ -33,7 +33,7 @@ nav button{
 .navbar-brand{
     margin-left: 4%;
 }
-#currentPage{
+.currentPage{
     font-weight: 600;
 }
 #navbarNavDropdown{

@@ -1,19 +1,34 @@
-$(document).ready(function(){
-    //the trigger on hover when cursor directed to this class
-      $(".core-menu li").hover(
-      function(){
-        //i used the parent ul to show submenu
-          $(this).children('ul').slideDown('fast');
-      }, 
-        //when the cursor away 
-      function () {
-          $('ul', this).slideUp('fast');
+document.addEventListener("DOMContentLoaded", function(){
+    // make it as accordion for smaller screens
+    if (window.innerWidth < 992) {
+    
+      // close all inner dropdowns when parent is closed
+      document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+        everydropdown.addEventListener('hidden.bs.dropdown', function () {
+          // after dropdown is hidden, then find all submenus
+            this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+              // hide every submenu as well
+              everysubmenu.style.display = 'none';
+            });
+        })
       });
-    //this feature only show on 600px device width
-      $(".hamburger-menu").click(function(){
-        $(".burger-1, .burger-2, .burger-3").toggleClass("open");
-          $(".core-menu").slideToggle("fast");
-      });
-  });
-  /** credit:@rafonzoo 
-  http://rafonzo.blogspot.co.id/ **/
+    
+      document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+        element.addEventListener('click', function (e) {
+            let nextEl = this.nextElementSibling;
+            if(nextEl && nextEl.classList.contains('submenu')) {	
+              // prevent opening link if link needs to open dropdown
+              e.preventDefault();
+              if(nextEl.style.display == 'block'){
+                nextEl.style.display = 'block';
+              } else {
+                nextEl.style.display = 'block';
+              }
+    
+            }
+        });
+      })
+    }
+    // end if innerWidth
+    }); 
+    // DOMContentLoaded  end
