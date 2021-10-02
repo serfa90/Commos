@@ -3,32 +3,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 nav{
-    height: 104px;
     background: rgba(196, 196, 196, 0.26);
     backdrop-filter: blur(4px);
     position: fixed;
+    max-height: 100%;
 }
 .principalNav{
     color: #172983;
     text-decoration: none;
-    line-height: 18px;
     font-size: 1rem;
     font-weight: 500;
     font-family: helvetica, arial, sans-serif;
-    padding: 8px 15px;
-    justify-content: space-around;
 }
-nav button{
+
+.login{
     background-color: #0088C9;
     font-family: Lato;
     font-weight: 400;
     font-size: 1rem;
     color: white;
-    width: 130pt;
-    height: 34pt;
+    width: 10em;
+    height: 3em;
     border-radius: 50px;
     border: none;
-    margin-right: 154px;
 }
 .navbar-brand{
     margin-left: 4%;
@@ -36,9 +33,7 @@ nav button{
 .currentPage{
     font-weight: 600;
 }
-#navbarNavDropdown{
-    margin-left: 24%;
-}
+
 .dropdown-item{
     font-family: helvetica;
     font-size: 0.8rem;
@@ -66,4 +61,46 @@ nav button{
   }
   .dropdown-menu > li:hover > .dropdown-submenu {
     display: block;
+  }
+  .navbar-toggler{
+      border-color: #172983;
+  }
+
+  @media only screen and (max-width: 576px) {
+      .login{
+        width: 8em;
+        height: 2em;
+        margin-left: 35%;
+      }
+  }
+  @media only screen and (min-width: 992px) {
+    .logo{
+        margin-right: 14em;
+    }
+    .aboutNav{
+        margin-right: 4em;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .logo{
+        margin-right: 3em;
+    }
+    .aboutNav{
+        margin-right: 0;
+    }
+  }
+  @media only screen and (max-width: 1025px) {
+    .logo{
+        margin-right: 3em;
+    }
+    .aboutNav{
+        margin-right: 0;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .login{
+        width: 10em;
+        height: 3em;
+        margin-left: 35%;
+      }
   }
